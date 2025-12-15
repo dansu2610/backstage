@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: azure-cli-template-create-storage
+  description: Azure CLI template to create a storage account
+spec:
+  type: cli-template
+  owner: cloud-team
+  system: azure
+  parameters:
+    $text: |
+      az storage account create \
+        --name <storageName> \
+        --resource-group <rgName> \
+        --location eastus \
+        --sku Standard_LRS
