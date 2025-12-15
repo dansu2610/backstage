@@ -1,6 +1,3 @@
-# -------------------------------
-# Group: cloud-team
-# -------------------------------
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
@@ -11,9 +8,6 @@ spec:
   parent: default
 
 ---
-# -------------------------------
-# System: azure
-# -------------------------------
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
@@ -23,9 +17,6 @@ spec:
   owner: cloud-team
 
 ---
-# -------------------------------
-# Resource: Azure CLI template
-# -------------------------------
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
