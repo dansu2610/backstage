@@ -1,4 +1,21 @@
 apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: cloud-team
+  description: Team responsible for cloud resources
+spec:
+  type: team
+  parent: default
+
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: azure
+  description: Azure cloud platform resources
+spec:
+  owner: cloud-team
+
+apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: azure-cli-template-create-storage
