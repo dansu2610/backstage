@@ -7,10 +7,9 @@ spec:
   type: cli-template
   owner: cloud-team
   system: azure
-  parameters:
-    $text: |
-      az storage account create \
-        --name myteststg001 \
-        --resource-group 1-6e8b95a3-playground-sandbox \
-        --location SouthCentralUS \
-        --sku Standard_LRS
+  parameters: |
+    az storage account create \
+      --name myteststg001 \
+      --resource-group 1-6e8b95a3-playground-sandbox \
+      --location SouthCentralUS \
+      --sku Standard_LRS
