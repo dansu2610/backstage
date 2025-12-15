@@ -10,7 +10,7 @@ spec:
   parameters:
     $text: |
       az storage account create \
-        --name <storageName> \
-        --resource-group <rgName> \
-        --location eastus \
+        --name myteststg001 \
+        --resource-group 1-6e8b95a3-playground-sandbox \
+        --location SouthCentralUS \
         --sku Standard_LRS
